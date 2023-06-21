@@ -1,0 +1,189 @@
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: -1;
+}
+.take-overlay{
+    opacity: 0 !important;
+    z-index: -1 !important;
+    transition: all 0.5s;
+}
+.show-overlay{
+    opacity: 1 !important;
+    z-index: 1 !important;
+    transition: all 0.5s;
+}
+.hide-form{
+    top: -50% !important;
+    transition: all 0.2s;
+    z-index: 1;
+}
+.show-form{
+    top: 50% !important;
+    transition: all 0.2s;
+    z-index: 2;
+}
+.form-btn{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.loginform,.registerform{
+    width: 400px;
+    background-color: white;
+    padding: 17px 40px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px 2px #484848;
+    opacity: 1;
+    transition: all 0.2;
+}
+.loginform>h1,.registerform>h1{
+    color: #737afe;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.loginform>input,.registerform>input{
+    width: 100%;
+    height: 35px;
+}
+.form-btn>p{
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 20px;
+    transition: all 0.2s ease;
+}
+.form-btn>p>span{
+    text-decoration: none;
+    color: #888efe ;
+    cursor: pointer;
+}
+.form-btn>p>span:hover{
+    color: #5c64fd;
+}
+.filds{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.filds>label{
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+.login-btn,.register-btn{
+    width: 100px;
+    background-color: #8f94fb;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 12px;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+}
+.login-btn:hover,.register-btn:hover{
+    background-color: #5c64fd;
+}
+.cross1,.cross2{
+    margin-bottom: 0px !important;
+    padding: 0px !important;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 8px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: #5c64fd;
+    transform: translateX(-5px) translateY(-28px);
+    font-size: 0.8em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #5c64fd;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 35px;
+  }
+  .form-btn>button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 7px 35px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #5c64fd;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #5c64fd;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #5c64fd;
+  }
+  
+  .form-btn>button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #5c64fd;
+  }
+  
+  .form-btn>button:active {
+    transform: scale(0.9);
+  }

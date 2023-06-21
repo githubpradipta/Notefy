@@ -1,0 +1,133 @@
+.zone{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
+#dropZ{
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    margin-top: 80px;
+    background-color: #5c64fd;
+    border: 5px dashed white;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+.content div{
+    position: absolute;
+    top: 74%;
+    left: 35%;
+    font-size: 15px;
+}
+.content .filelimit{
+    position: absolute;
+    top: 82%;
+    left: 39%;
+    font-size: 15px;
+  }
+#dropZ i{
+    font-size: 230px;
+    margin-top: 30px;
+    color: white;
+}
+.selectFile {
+    height: 50px;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    position: relative;
+    width: 200px;    
+    transition: all 0.2s ease;      
+  }
+  /* .selectFile:hover{
+    background-color: #5c64fd;
+  } */
+  .selectFile:hover label{
+    color: white;
+    background: #5c64fd;
+  }
+  .selectFile:active{
+    transform: scale(0.9);
+  }
+  label, input {
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 5px;          
+  }
+  label {
+    background: #fff;
+    color: #5c64fd;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 400;   
+    box-shadow: 0 1px 1px gray;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .selectFile label:hover{
+    background-color: #5c64fd;
+    color: #fff;
+  }
+  input[type=file] {
+    opacity: 0;
+  }
+  .topic{
+    position: absolute;
+    top: 80%;
+    width: 400px;
+    margin-left: 390px;
+    height: 40px;
+    border: transparent;
+    outline: none;
+    border-bottom: 2px solid #5c64fd;
+    padding: 3px 12px;
+    background: transparent;
+    border-radius: 0px;
+    transition: all 0.2s ease-in-out;
+  }
+  .topic::placeholder{
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+  }
+  .topic:hover::placeholder{
+    color: #5c64fd;
+  }
+  .topic:focus::placeholder{
+    color: #5c64fd;
+    font-size: 15px;
+    transform:translateY(0.3);
+  }
+  .submit{
+    position: absolute;
+    top: 90%;
+    width: 200px;
+    height: 50px;
+    background-color: #5c64fd;
+    color: #fff;
+    outline: none;
+    border: 2px solid #5c64fd;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  .submit:hover{
+    background-color: transparent;
+    border: 2px solid #5c64fd;
+    color: #5c64fd;
+    cursor: pointer;
+  }
+  .submit:active{
+    transform: scale(0.9);
+  }

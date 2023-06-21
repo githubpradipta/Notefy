@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/css/sidenav.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!----===== Googlecons CSS ===== -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!----===== Bootstrap ===== -->
+
+
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                
+                <span class="image">
+                    <a href="/user/<%=id%>">
+                    <img src="../profilePictures/<%=profile_pic%>" alt="">
+                </a>
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">
+                        <%=name%>
+                    </span>
+                    <span class="profession">@<%=username%></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/user/<%=id%>">
+                            <i class='bx bxs-user icon'></i>
+                            <span class="text nav-text">User Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/notes/<%=id%>">
+                            <i class='bx bx-book-open icon'></i>
+                            <span class="text nav-text">Notes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/uploadnotes/<%=id%>">
+                            <i class='bx bx-upload icon'></i>
+                            <span class="text nav-text">Upload Notes</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/logout">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">
+            <div class="mainheading">
+                <h1 class="heading">Your Notes</h1>
+                <p>Browse your favorite Notes and Download it</p>
+            </div>
+
+            <div class="container1">
+                <!-- <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div> -->
+                <!-- <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <div class="imagediv">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.2sA_t9fLcvDFMqNfjWhEkAHaE8&pid=Api&P=0" alt=""
+                                srcset="" class="n-img">
+                        </div>
+                        <p class="text-title">Card title</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">Download</button>
+                </div> -->
+
+            </div>
+            <button onclick="cardMethod()">Click</button>
+
+        </div>
+
+    </section>
+
+    <!-- JS file -->
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            console.log("clicked");
+        })
+
+        // searchBtn.addEventListener("click" , () =>{
+        //     sidebar.classList.remove("close");
+        // })
+
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+
+            }
+        });
+
+    </script>
+    <script src="../js/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        let data = urlParams.get('message');
+        if (urlParams.has('success') && urlParams.get('success')) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            Toast.fire({
+                icon: 'success',
+                title: `${data}`
+            })
+        }        
+    </script>
+
+</body>
+
+</html>
