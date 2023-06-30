@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
-
-mongoose.connect('mongodb+srv://Notefy:Notefy.com@cluster0.k4burje.mongodb.net/?retryWrites=true&w=majority')
+require("dotenv").config();
+mongoose.connect(`${process.env.MongoURL}/?retryWrites=true&w=majority`)
 .then((db)=>{
     console.log('Database Connected...')
 })
